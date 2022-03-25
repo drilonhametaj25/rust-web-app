@@ -27,3 +27,10 @@ test: cosa andare a "runnare"
 model_db: filtro di ricerca per cosa andare a runnare
 --test-threads: quanti thread andare a utilizzare
 --nocaputre: per solo sviluppo
+
+
+## Dev Web
+Bisogna essere all'inerno di rust ovviamente
+```sh
+cargo watch -q -c -w src/ -x 'run -- ../frontend/web'
+```

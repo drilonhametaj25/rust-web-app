@@ -3,6 +3,10 @@ use thiserror::Error as ThisError;
 mod db;
 mod todo;
 
+// re-export
+pub use db::Db;
+pub use db::init_db;
+
 // Enumeratore di errori per poter personalizzare 
 #[derive(ThisError, Debug)]
 pub enum Error{

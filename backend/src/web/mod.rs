@@ -4,6 +4,8 @@ use std::path::Path;
 use warp::Filter;
 
 
+mod todo;
+
 pub async fn start_web(web_folder: &str, web_port: u16, db: Arc<Db>) -> Result<(), Error> {
     if !Path::new(web_folder).exists() {
         return Err(Error::FailStartWebFolderNotFound(web_folder.to_string()));

@@ -6,6 +6,7 @@ mod todo;
 // re-export
 pub use db::Db;
 pub use db::init_db;
+pub use todo::TodoMac;
 
 // Enumeratore di errori per poter personalizzare 
 #[derive(ThisError, Debug)]

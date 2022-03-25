@@ -34,3 +34,7 @@ Bisogna essere all'inerno di rust ovviamente
 ```sh
 cargo watch -q -c -w src/ -x 'run -- ../frontend/web'
 ```
+
+Test
+```
+cargo watch -q -c -w src/ -x 'test web -- --test-threads=1 --nocapture'
